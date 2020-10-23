@@ -6,6 +6,8 @@
   let setupClose = document.querySelector('.setup-close');
   let setupUserName = document.querySelector('.setup-user-name');
 
+  window.setupUserName = setupUserName;
+
   let onPopupEscPress = function (evt) {
     if (setupUserName !== document.activeElement) {
       if (evt.keyCode === window.KEY_ESC) {
@@ -43,6 +45,7 @@
 
   let openPopap = function () {
     window.setupBlock.classList.remove('hidden');
+    setupUserName.value = 'Синий Пендальф';
 
     document.addEventListener('keydown', onPopupEscPress);
     setupClose.addEventListener('click', onPopupClickPress);
