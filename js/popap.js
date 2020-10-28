@@ -1,5 +1,5 @@
 'use strict';
-// Открытие и закрытие Попап основного персанажа
+// Открытие и закрытие Попап основного персанажа с участниками
 
 (function () {
   let setupOpen = document.querySelector('.setup-open');
